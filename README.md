@@ -1,73 +1,74 @@
-# React + TypeScript + Vite
+# 📱 GSAP Portifolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=black)
+![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
 
-Currently, two official plugins are available:
+Website desenvolvido para estudo na área do front end, mais especifico para o aprendizado de animações básicas com **GSAP**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> ⚠️ **Aviso**  
+> Este projeto é apenas para fins educacionais. Todos os direitos pertence ao canal **Rapuz Web**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🖼️ Preview
+<img width="1848" height="949" alt="Captura de tela 2025-12-30 212635" src="https://github.com/user-attachments/assets/954d123d-4eb7-4079-8eef-1ceecffc480e" />
+<img width="1853" height="948" alt="Captura de tela 2025-12-30 212650" src="https://github.com/user-attachments/assets/7fa05b93-e436-4aac-9bd4-3d250ff41296" />
+<img width="1848" height="950" alt="Captura de tela 2025-12-30 212704" src="https://github.com/user-attachments/assets/fccc0a0c-482e-485d-873d-344cc56fa203" />
+<img width="1849" height="947" alt="Captura de tela 2025-12-30 212712" src="https://github.com/user-attachments/assets/3f9b4513-de6b-4285-8b15-8ac1c32613c1" />
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Tecnologias Utilizadas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- ⚡ **Vite** – Build tool rápida e moderna
+- 🎨 **Tailwind CSS** – Estilização utilitária e responsiva
+- 🎥 **GSAP (GreenSock Animation Platform)** – Animações avançadas
+- 🧠 **Typescript (ES6+)** - Superset do JavaScript que adiciona tipagem estática e mais segurança ao código
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ✨ Funcionalidades
+
+- Animações fluidas
+- Performance otimizada com Vite
+- Código organizado e reutilizável
+
+---
+
+## 📂 Estrutura de Pastas
+
+```bash
+├── public
+├── src
+│   ├── assets
+│     └── images
+│   ├── components
+│   ├── pages
+│   ├── sections
+│   ├── App.tsx
+│   └── main.tsx
+├── postcss.config.js
+├── vite.config.js
+├── package.json
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Instalação e Uso
+Pré-requisitos
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Node.js (versão 18 ou superior)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+npm ou yarn
+```bash
+cd <pasta-do-projeto>
+npm i
+npm run dev
 ```
+
+## Créditos
+
+Desenvolvido para fins educacionais
+
+Tutorial presente no canal: [Rapuz Web](https://www.youtube.com/watch?v=iVTIfgdp90o)
